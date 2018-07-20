@@ -1,0 +1,28 @@
+<div class="card mt-5">
+  <div class="card-header bg-info textwhite">
+    <h4>Liste des produits</h4>
+  </div>
+  <div class="card-body">
+    <table class="table table-bordered table-striped">
+      <thead>
+        <tr>
+          <th>Code</th>
+          <th>Unité</th>
+          <th>Prix Unitaire</th>
+        </tr>
+      </thead>
+      <tbody *ngFor="let p of products">
+        <tr>
+          <td scope="row">{{p.code}}</td>
+          <td>{{p.libelle}}</td>
+          <td>{{p.prixUnitaire}}</td>
+        </tr>
+        <tr>
+          <td scope="row"></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
